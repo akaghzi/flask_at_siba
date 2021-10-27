@@ -6,7 +6,8 @@
 </head>
 <body>
 	{% include 'navbar.html' %}
-	{% include 'junk.html' %}
+	<!-- please pay attention to how jinja2 comments are  -->
+	{#% include 'junk.html' %#}
 	<div class="container-fluid">
 		{% block content %}
 		{% endblock %}
