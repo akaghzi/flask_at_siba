@@ -1,0 +1,10 @@
+{% extends 'basic.html' %}
+{% block content %}
+	<h1>Semester 4 and above</h1>
+	{% for student in students %}
+		{% if student['semester'] >= 4 %}
+		<p>student id: {{ student['id'] }}</p>
+		<p>student name: {{ student['name'] }}</p>
+		{% endif %}
+	{% endfor %}
+{% endblock %}

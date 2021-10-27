@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<!-- some comment -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+</head>
+<body>
+	{% include 'navbar.html' %}
+	{% include 'junk.html' %}
+	{% block content %}
+	{% endblock %}
+</body>
+</html>
